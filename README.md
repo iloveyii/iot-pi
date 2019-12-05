@@ -17,6 +17,8 @@ network={
 }
 ``` 
   * Eject SD card from computer and place in PI, power up PI.
+  * To ssh to PI you need to find IP and may scan network by using `nmap -sP 192.168.0.0/24` or whatever is your network.
+  * ssh pi@192.168.0.11, assuming this is your ip, default username is pi and password is raspberry. Change it by `sudo passwd pi`'
   
 ### Node
   * Change credentials in _file server.js.
