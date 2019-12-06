@@ -21,18 +21,15 @@ network={
   * ssh pi@192.168.0.11, assuming this is your ip, default username is pi and password is raspberry. Change it by `sudo passwd pi`'
   
 ### Node
-  * Change credentials in _file server.js.
-  * Run app like (inside node) : `npm start`.
-
-    
-### Git
-
-   * You many need to install the following.
-     1. node >= 10.16.0
-     2. npm >= 6.9.0
-     3. PHP 7
-     4. Apache 2 or Nginx Web server
-     5. MySQL >= 5.7
-     
+  * Update `sudo apt update`.
+  * Install `curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -` and then `sudo apt install nodejs && sudo apt install build-essential`.
+  * Uninstall if needed `sudo apt remove nodejs`.
+  * Check versions`node -v && npm -v`.
+  
      
 ### VNC Server
+
+
+
+### Issues and solution
+   * To set the display resolution `nano /boot/config.txt`, and set `hdmi_mode	16`.
