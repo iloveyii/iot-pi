@@ -23,13 +23,18 @@ network={
   
   
 ### Node
-  * Update `sudo apt update`.
-  * Install `curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -` and then `sudo apt install nodejs && sudo apt install build-essential`.
-  * Uninstall if needed `sudo apt remove nodejs`.
-  * Check versions`node -v && npm -v`.
+  * Install Node Version Manager (NVM)
+    `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash`
+  * Source profile
+    `source ~/.bashrc`
+  * Install node v8 `nvm install 8`
+  * Set as default `nvm use 8` 
+  * If you want to use latest npm `npm install npm@latest -g`
   
      
 ### VNC Server
+  * Run `sudo raspi-config` and then choose Interfacing Options, enable VNC.
+  * Connect from a VNC client from your computer.
 
 
 
